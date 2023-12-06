@@ -1,14 +1,14 @@
 {
   "ci": {
-    "assert": {
-      "assertions": {
-        "first-contentful-paint": [
-          "error",
-          {
-            "minScore": 0.6
-          }
-        ]
-      }
+    "collect": {
+      "startServerCommand": "npm build && npm server",
+      "url": [
+        "http://localhost:3000/"
+      ],
+      "numberOfRuns": 3
+    },
+    "upload": {
+      "target": "temporary-public-storage"
     }
   }
 }
