@@ -17,6 +17,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <img src="/public/chad-madden-SUTfFCAHV_A-unsplash.jpg" alt="Xmas 2023" />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
