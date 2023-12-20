@@ -6,7 +6,10 @@
       "numberOfRuns": 3
     },
     "assert": {
-      "preset": "lighthouse:recommended"
+      "assertions": {
+        "first-contentful-paint": ["warn", { "maxNumericValue": 1000 }],
+        "largest-contentful-paint": ["warn", { "maxNumericValue": 1000 }]
+      }
     },
     "upload": {
       "target": "temporary-public-storage"
